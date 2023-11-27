@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button onclick="previous()">Previous</button>
+  <button onclick="switchView('monthly')">Monthly View</button>
+  <button onclick="switchView('weekly')">Weekly View</button>
+  <button onclick="next()">Next</button>
+  <h2 id="currentMonthYear"></h2>
+  <table id="calendar">
+    <thead>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+    </thead>
+    <tbody id="calendarBody">
+    </tbody>
+  </table>
+<script src="script.js"></script>
+</body>
+</html>
